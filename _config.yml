@@ -1,0 +1,12 @@
+collections_dir: _collections
+
+collections:
+  courses:
+    output: true
+    permalink: /courses/:name/
+  faculty:
+    output: true
+    permalink: /faculty/:name/
+  news:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
