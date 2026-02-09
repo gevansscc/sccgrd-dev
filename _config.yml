@@ -7,6 +7,10 @@ collections:
   faculty:
     output: true
     permalink: /faculty/:name/
+  gradshow:
+    output: true
+    permalink: /faculty/:name/
   news:
     output: true
     permalink: /news/:year/:month/:day/:title/
+
