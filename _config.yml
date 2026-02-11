@@ -1,16 +1,58 @@
+# Required for GitHub Pages compatibility
+markdown: kramdown
+highlighter: rouge
+
+# If this is a project site (username.github.io/repo-name)
+# set baseurl to "/repo-name"
+# If this is a user/org site (username.github.io), leave it as ""
+baseurl: ""
+
+# Your main site URL
+# Example: https://username.github.io
+url: ""
+
+# Store collections in a dedicated directory
 collections_dir: _collections
 
 collections:
   courses:
     output: true
-    permalink: /courses/:name/
+    permalink: /courses/:slug/
+
   faculty:
     output: true
-    permalink: /faculty/:name/
+    permalink: /faculty/:slug/
+
   gradshow:
     output: true
-    permalink: /faculty/:name/
+    permalink: /gradshow/:slug/
+
   news:
     output: true
-    permalink: /news/:year/:month/:day/:title/
+    permalink: /news/:year/:month/:day/:slug/
 
+# Recommended defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "course"
+
+  - scope:
+      path: ""
+      type: "faculty"
+    values:
+      layout: "faculty"
+
+  - scope:
+      path: ""
+      type: "gradshow"
+    values:
+      layout: "gradshow"
+
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
