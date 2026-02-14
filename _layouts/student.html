@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>{{ page.name }}</h1>
+
+<img src="{{ page.featured_image }}" alt="{{ page.name }}">
+
+<p>{{ page.bio }}</p>
+
+<ul>
+  {% if page.instagram %}<li><a href="{{ page.instagram }}">Instagram</a></li>{% endif %}
+  {% if page.linkedin %}<li><a href="{{ page.linkedin }}">LinkedIn</a></li>{% endif %}
+  {% if page.website %}<li><a href="{{ page.website }}">Website</a></li>{% endif %}
+</ul>
