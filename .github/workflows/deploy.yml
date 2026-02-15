@@ -27,4 +27,13 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git remote add production git@github.com:gevansscc/sccgrd.git
-          git push production main --force
+
+        # Remove CNAME from the index so it won't be overwritten
+        git checkout production/main -- CNAME || echo "CNAME does not exist yet"
+
+       # Stage all other files
+        git add --all
+        git commit -m "Deploy from dev → main" || echo "Nothing to commit"
+
+        # Push everything except CNAME
+        git push production main --force
