@@ -1,0 +1,92 @@
+//2026 Grad Show Typeface
+@import url("https://use.typekit.net/pzq1zpp.css");
+
+// 2026 Grad Show Colours
+$brand-color: #2a7ae2;
+$brand-color-light: #6ca0f7;
+$brand-color-dark: #1a4a8a;
+$text-color: #333;
+
+
+$brand-color-light:#fff;
+$background-color: #000;
+
+
+
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+    font-family: "proxima-nova", sans-serif;
+}
+
+.logo {
+  fill: $brand-color-light;
+}
+
+.landing-page {
+  min-height: 100vh;
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;  // horizontal
+    align-items: center;      // vertical
+    height: 100vh;
+  }
+
+  .logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.landing-content {
+  min-height: 100vh;          // full viewport height
+  display: flex;
+  justify-content: center;     // center horizontally
+  align-items: center;         // center vertically
+  // background: #111;            // optional background
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;      // stack logo, h1, h2 vertically
+  align-items: center;         // center all items horizontally
+  text-align: center;          // center the text
+  gap: 1rem;                   // space between logo and text
+}
+
+.logo {
+  width: 300px;                // adjust logo size
+  max-width: 80vw;
+  height: auto;
+}
+
+h1 {
+  font-family: "area-variable",sans-serif;
+  font-variation-settings: 'INKT' 0, 'wght' 900, 'wdth' 200, 'slnt' 0;
+
+  font-size: 3rem;             // adjust for your layout
+  margin: -50px;
+  padding:0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #ccc;
+  font-weight: 400;
+}
+
+h3 {
+    font-family: "area-variable", sans-serif;
+    font-variation-settings: "INKT" 0, "wght" 500, "wdth" 200, "slnt" 0;
+    font-size: .8855rem;
+  margin: 30px;
+  color: #ccc;
+  font-weight: 400;
+}
+

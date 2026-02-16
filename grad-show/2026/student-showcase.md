@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Grad Show 2026
+permalink: /grad-show/2026/chromatic/student-showcase
 ---
 
 <h1>Grad Show 2026</h1>
