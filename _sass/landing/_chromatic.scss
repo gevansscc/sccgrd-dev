@@ -98,4 +98,9 @@ h3 {
   flex: 1.3; // bottom spacer slightly bigger
 }
 
+// Flexible spacers to control vertical centering
+.spacer:first-of-type {
+  flex: 0.6; // top spacer slightly smaller to push content up
+}
+
 }
