@@ -94,4 +94,8 @@ h3 {
   h2 {
     font-size: 1.2rem;
   }
+.spacer:last-of-type {
+  flex: 1.3; // bottom spacer slightly bigger
+}
+
 }
