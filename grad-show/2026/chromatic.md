@@ -2,6 +2,7 @@
 layout: chromatic
 title: St. Clair College | Grapic Design Grad Show | Chromatic 2026
 permalink: /grad-show/2026/chromatic/
+description: "CHROMATIC 2026: Explore the creativity, individuality, and bold design of St. Clair College’s Graphic Design graduating class."
 ---
 
 <div class="landing-page">
