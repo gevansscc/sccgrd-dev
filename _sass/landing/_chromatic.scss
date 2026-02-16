@@ -1,76 +1,67 @@
-//2026 Grad Show Typeface
+// 2026 Grad Show Typeface
 @import url("https://use.typekit.net/pzq1zpp.css");
 
 // 2026 Grad Show Colours
 $brand-color: #2a7ae2;
-$brand-color-light: #6ca0f7;
+$brand-color-light: #fff; // logo light color
 $brand-color-dark: #1a4a8a;
 $text-color: #333;
-
-
-$brand-color-light:#fff;
 $background-color: #000;
 
-
-
-
-body{
-    background-color: $background-color;
-    color: $text-color;
-    font-family: "proxima-nova", sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: "proxima-nova", sans-serif;
 }
 
+// Landing page wrapper
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+// Flexible spacers to control vertical centering
+.spacer:first-of-type {
+  flex: 0.8; // top spacer slightly smaller to push content up
+}
+
+.spacer:last-of-type {
+  flex: 1.2; // bottom spacer slightly bigger
+}
+
+// Logo + text wrapper
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem; // spacing between logo and text
+}
+
+// Override gap between h1 and h3 specifically
+.logo-wrapper h3 {
+  margin-top: 0px; // sits just below h1
+  margin-bottom: 0;
+}
+
+// Logo styling
 .logo {
+  width: 300px;
+  max-width: 80vw;
+  height: auto;
   fill: $brand-color-light;
 }
 
-.landing-page {
-  min-height: 100vh;
-
-  .logo-wrapper {
-    display: flex;
-    justify-content: center;  // horizontal
-    align-items: center;      // vertical
-    height: 100vh;
-  }
-
-  .logo {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-.landing-content {
-  min-height: 100vh;          // full viewport height
-  display: flex;
-  justify-content: center;     // center horizontally
-  align-items: center;         // center vertically
-  // background: #111;            // optional background
-}
-
-.logo-wrapper {
-  display: flex;
-  flex-direction: column;      // stack logo, h1, h2 vertically
-  align-items: center;         // center all items horizontally
-  text-align: center;          // center the text
-  gap: 1rem;                   // space between logo and text
-}
-
-.logo {
-  width: 300px;                // adjust logo size
-  max-width: 80vw;
-  height: auto;
-}
-
+// Headings
 h1 {
-  font-family: "area-variable",sans-serif;
+  font-family: "area-variable", sans-serif;
   font-variation-settings: 'INKT' 0, 'wght' 900, 'wdth' 200, 'slnt' 0;
-
-  font-size: 3rem;             // adjust for your layout
-  margin: -50px;
-  padding:0;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
   color: #fff;
 }
 
@@ -82,11 +73,25 @@ h2 {
 }
 
 h3 {
-    font-family: "area-variable", sans-serif;
-    font-variation-settings: "INKT" 0, "wght" 500, "wdth" 200, "slnt" 0;
-    font-size: .8855rem;
-  margin: 30px;
+  font-family: "area-variable", sans-serif;
+  font-variation-settings: "INKT" 0, "wght" 500, "wdth" 200, "slnt" 0;
+  font-size: .8855rem;
+  margin: 30px 0 0 0;
   color: #ccc;
   font-weight: 400;
 }
 
+// Mobile adjustments
+@media (max-width: 768px) {
+  .logo {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
