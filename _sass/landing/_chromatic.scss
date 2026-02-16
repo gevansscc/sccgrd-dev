@@ -18,10 +18,47 @@ body {
 
 // Landing page wrapper
 .landing-page {
+  position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  overflow: hidden; // ensures video doesn’t overflow
+
+
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; // maintains aspect ratio, fills screen
+  z-index: -1;       // behind all content
+  pointer-events: none; // ensures video doesn’t block clicks
+}
+
+// Overlay to darken video
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35); // subtle dark overlay, adjust opacity to taste
+  z-index: -1; // sits above video, below content
+}
+  // Logo wrapper stays above overlay
+.logo-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem; // small spacing between logo and headings
+  z-index: 1;    // ensure above video & overlay
 }
 
 // Flexible spacers to control vertical centering
@@ -94,6 +131,15 @@ h3 {
   h2 {
     font-size: 1.2rem;
   }
+
+   .landing-page {
+    background: url('/assets/media/bg3_chromatic.jpg') center/cover no-repeat;
+  }
+
+  .background-video {
+    display: none; // hide video on smaller screens
+  }
+
 .spacer:last-of-type {
   flex: 1.3; // bottom spacer slightly bigger
 }

@@ -5,7 +5,19 @@ permalink: /grad-show/2026/chromatic/
 description: "CHROMATIC 2026: Explore the creativity, individuality, and bold design of St. Clair College’s Graphic Design graduating class."
 ---
 
+  <!-- Full-screen background video -->
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="/assets/media/bg3_chromatic.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+ <div class="video-overlay"></div>
+
 <div class="landing-page">
+
+
+
+
   <div class="spacer"></div> <!-- flexible top spacer -->
 
   <div class="logo-wrapper">
