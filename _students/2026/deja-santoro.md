@@ -1,5 +1,5 @@
 ---
-name: Deja Santoro
+name: Deja 
 grad_year: 2026
 featured_image: /assets/img/
 bio: 
