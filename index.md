@@ -6,11 +6,11 @@ title: Home
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "homepage_redirect",
-      redirect_target: "/grad-show/2026/"
+      redirect_target: "/grad-show/2026/chromatic/"
     });
 
     setTimeout(function () {
-      window.location.replace("/grad-show/2026/");
+      window.location.replace("/grad-show/2026/chromatic/");
     }, 600); // 600ms delay ensures GTM loads
   </script>
 
