@@ -2,10 +2,21 @@
 layout: default
 title: Home
 ---
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "homepage_redirect",
+      redirect_target: "/grad-show/2026/"
+    });
 
-<h2>Welcome to the SCC Graphic Design Program Portfolio</h2>
-<p>Explore our students and annual grad shows.</p>
+    setTimeout(function () {
+      window.location.replace("/grad-show/2026/");
+    }, 600); // 600ms delay ensures GTM loads
+  </script>
 
-<ul>
-  <li><a href="/grad-show/2026/">Grad Show 2026</a></li>
-</ul>
+</head>
+<body>
+  <p>Redirecting…</p>
+</body>
+</html>
+
